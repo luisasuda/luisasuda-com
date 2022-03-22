@@ -5,7 +5,7 @@
         <style>/* font src */
             @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Mono:wght@300&family=DM+Sans&display=swap');
             
-            ellipse {
+            .ellipse {
             
                 position: absolute;
                 width: 1081px;
@@ -37,19 +37,27 @@
             
             nav {
                 
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
                 position: absolute;
                 width: 549px;
-                height: 52px;
-                left: 82px;
-                top: 194px;
+                height: 48px;
+                left: 76px;
+                top: 243px;
+
             }
             
             h1 {
-                position: static;
-                left: 0%;
-                right: 0%;
-                top: 0%;
-                bottom: 0%;
+
+                position: absolute;
+                width: 554px;
+                height: 170px;
+                left: 77px;
+                top: 64px;
+
 
                 font-family: 'Abril Fatface';
                 font-style: normal;
@@ -59,15 +67,21 @@
                 letter-spacing: -0.08em;
 
                 color: #764248;
+
             }
 
             h2 {
 
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 10px;
+
                 position: absolute;
-                width: 466px;
-                height: 62px;
-                left: 85px;
-                top: 295px;
+                width: 486px;
+                height: 82px;
+                left: 75px;
+                top: 285px;
 
                 font-family: 'DM Sans';
                 font-style: normal;
@@ -147,7 +161,12 @@
 
             img.icon {
 
-                filter: grayscale(0.00)
+                filter: grayscale(0.00);
+                width: 48px;
+                height: 48px;
+                left: 82px;
+                top: 194px;
+
 
             }
 
@@ -162,6 +181,20 @@
                 letter-spacing: -0.05em;
 
                 color: #DDA3B2;
+
+            }
+
+            p {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
+                position: absolute;
+                width: 532px;
+                height: 279px;
+                left: 85px;
+                top: 373px;
 
             }
 
@@ -180,13 +213,15 @@
 
       <h2>hi! nice to meet you. 👋</h2><br>
 
-      <p style="position: absolute;
-      width: 532px;
-      height: 222px;
-      left: 85px;
-      top: 373px;">i’m a product owner at a healthtech company in brazil. I’ve been working in this industry sector for a year, after joining an AI-based solutions in assisted diagnosis startup as a product researcher. Before that, I worked in the telecommunications industry, given that I have majored in Electrical Engineering, and also hold a specialist title in Telecommunications.</p>
+      <p>i’m a product owner at a healthtech company in brazil. I’ve been working in this industry sector for a year, after joining an AI-based solutions in assisted diagnosis startup as a product researcher. Before that, I worked in the telecommunications industry, given that I have majored in Electrical Engineering, and also hold a specialist title in Telecommunications.</p>
       <div id="ellipse"></div>
-      <img src="imgs/32C72ECD-E0FD-4D88-8AFA-0E44EB464183.jpg" style="position: absolute; width: 652px; height: 869px; left: 750px; top: 25px;">
+      <img style="position: absolute;
+      width: 652px;
+      height: 870px;
+      left: 750px;
+      top: 25px;" src="imgs/32C72ECD-E0FD-4D88-8AFA-0E44EB464183.jpg">
+
+      <div id="ellipse"></div>
 
         <footer>
           <b>march 2022</b>  <i>from sp with 💛</i>  <a href="mailto:luisa@luisasuda.com">luisa@luisasuda.com</a>
