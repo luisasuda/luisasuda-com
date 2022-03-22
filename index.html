@@ -3,7 +3,7 @@
     <head>
         <title>luisasuda.com</title>
         <style>/* font src */
-            @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Mono:wght@300&family=DM+Sans&display=swap');
             
             ellipse {
             
@@ -26,7 +26,7 @@
                 font-family: 'DM Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 26px;
                 line-height: 31px;
                 text-align: justify;
                 letter-spacing: -0.05em;
@@ -45,15 +45,40 @@
             }
             
             h1 {
-              
-                font-family: 'Abril Fatface', cursive;
+                position: static;
+                left: 0%;
+                right: 0%;
+                top: 0%;
+                bottom: 0%;
+
+                font-family: 'Abril Fatface';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 144px;
-                line-height: 31px;
-                text-align: justify;
-                letter-spacing: -0.05em;
+                line-height: 161px;
+                letter-spacing: -0.08em;
+
                 color: #764248;
+            }
+
+            h2 {
+
+                position: absolute;
+                width: 466px;
+                height: 62px;
+                left: 85px;
+                top: 295px;
+
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 62px;
+                letter-spacing: -0.05em;
+
+                color: #DDA3B2;
+
+
             }
             
             footer {
@@ -70,6 +95,7 @@
                 line-height: 26px;
                 letter-spacing: -0.1em;
                 text-transform: lowercase;
+                text-align: center;
               }
             
             button {
@@ -107,31 +133,64 @@
                 mix-blend-mode: normal;
                 border-radius: 38px;
                 filter: grayscale(1.00);
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
             }
             
             img:hover{
                 mix-blend-mode: normal;
                 border-radius: 38px;
                 filter: grayscale(0.00);
+                
             
             }
+
+            img.icon {
+
+                filter: grayscale(0.00)
+
+            }
+
+            a:link {
+
+                font-family: 'DM Mono', 'monospace';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 31px;
+                text-align: justify;
+                letter-spacing: -0.05em;
+
+                color: #DDA3B2;
+
+            }
+
             </style>
       <nav>
-        <a href="https://www.linkedin.com/in/luísa-suda-979927bb/"><img src="imgs/icons/icons8-linkedin-48.png"></a>  
-        <a href=""><img src="imgs/icons/icons8-twitter-48.png"></a>
-        <a href=""><img src="imgs/icons/icons8-wordpress-48.png"></a>
-        <button href="mailto:luisa@luisasuda.com" type="button" style="">email</button>
-        <button href="" type="button" style="">resumé</button>
+        <a href="https://www.linkedin.com/in/luísa-suda-979927bb/"><img class="icon" src="imgs/icons/icons8-linkedin-48.png"></a>  
+        <a href=""><img class="icon" src="imgs/icons/icons8-twitter-48.png"></a>
+        <a href=""><img class="icon" src="imgs/icons/icons8-wordpress-48.png"></a>
+        <button href="mailto:luisa@luisasuda.com" type="button">email</button>
+        <button href="" type="button">resumé</button>
       </nav>
     </head>
     <body>
-      <h1 style="">luísa suda</h1>
-      <nav></nav>
-      <p style="position: absolute; width: 532px; height: 222px; left: 85px; top: 373px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+
+      <h1>luísa suda</h1>
+
+      <h2>hi! nice to meet you. 👋</h2><br>
+
+      <p style="position: absolute;
+      width: 532px;
+      height: 222px;
+      left: 85px;
+      top: 373px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div id="ellipse"></div>
       <img src="imgs/32C72ECD-E0FD-4D88-8AFA-0E44EB464183.jpg" style="position: absolute; width: 652px; height: 952px; left: 750px; top: 25px;">
+
         <footer>
-          <p style="position: absolute; left: 56.25%; right: 36.67%; top: 96.68%; bottom: 0.78%;">march 2022</p>
-          <i>from sp with 💛</i>
+          <b>march 2022</b>  <i>from sp with 💛</i>  <a href="mailto:luisa@luisasuda.com">luisa@luisasuda.com</a>
         </footer>
+
     </body>
 </html>
