@@ -32,11 +32,12 @@ body {
 }
 
 nav {
-  position: absolute;
-  width: 549px;
-  height: 52px;
-  left: 82px;
-  top: 194px;
+    
+    position: absolute;
+    width: 549px;
+    height: 52px;
+    left: 82px;
+    top: 194px;
 }
 
 h1 {
