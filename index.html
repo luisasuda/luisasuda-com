@@ -6,22 +6,29 @@
             @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Mono:wght@300&family=DM+Sans&display=swap');
             
             .ellipse {
-            
-                position: absolute;
-                width: 1081px;
-                height: 1047px;
-                left: 85px;
+
+                position: static;
+                width: 1019px;
+                height: 1025px;
+                left: 10px;
                 top: 10px;
-            
+
                 background: radial-gradient(50% 50% at 50% 50%, #E3C5BB 0%, #DFE2CF 100%);
                 mix-blend-mode: normal;
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 10px;
             }
             
             body {
                 position: relative;
                 width: 1440px;
                 height: 1024px;
-                background: #DFE2CF;
+                color: #DFE2CF;
             
                 font-family: 'DM Sans';
                 font-style: normal;
@@ -30,9 +37,24 @@
                 line-height: 31px;
                 text-align: justify;
                 letter-spacing: -0.05em;
-            
+
+                background: no-repeat center/80% url("imgs/Ellipse1.png");
+                background-color: #DFE2CF;
                 color: #764248;
             
+            }
+
+            background-src {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 10px;
+
+                position: absolute;
+                width: 1039px;
+                height: 1045px;
+                left: 137px;
+                top: 0px;
             }
             
             nav {
@@ -44,20 +66,55 @@
 
                 position: absolute;
                 width: 549px;
-                height: 48px;
-                left: 76px;
-                top: 243px;
+                height: 55px;
+                left: 77px;
+                top: 230px;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 39px;
+
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 0px 39px;
+                
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+                margin: 0px 39px;
+
+                flex: none;
+                order: 3;
+                flex-grow: 0;
+                margin: 0px 39px;
+
+                flex: none;
+                order: 4;
+                flex-grow: 0;
+                margin: 0px 39px;
 
             }
             
             h1 {
 
-                position: absolute;
+                /* position: absolute;
                 width: 554px;
                 height: 170px;
                 left: 77px;
-                top: 64px;
+                top: 64px; */
 
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
+                position: absolute;
+                width: 554px;
+                height: 124px;
+                left: 74px;
+                top: 86px;
 
                 font-family: 'Abril Fatface';
                 font-style: normal;
@@ -67,6 +124,11 @@
                 letter-spacing: -0.08em;
 
                 color: #764248;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 10px;       
 
             }
 
@@ -96,6 +158,17 @@
             }
             
             footer {
+                /* position: absolute;
+                width: 562px;
+                height: 26px;
+                left: 810px;
+                top: 990px; */
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+
                 position: absolute;
                 width: 562px;
                 height: 26px;
@@ -110,6 +183,12 @@
                 letter-spacing: -0.1em;
                 text-transform: lowercase;
                 text-align: center;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 0px 10px;
+
               }
             
             button {
@@ -200,7 +279,12 @@
 
             </style>
       <nav>
-        <a href="https://www.linkedin.com/in/luísa-suda-979927bb/"><img class="icon" src="imgs/icons/icons8-linkedin-48.png"></a>  
+        <a href="https://www.linkedin.com/in/luísa-suda-979927bb/"><img class="icon" src="imgs/icons/icons8-linkedin-48.png"></a style="position: static;
+            width: 48px;
+            height: 48px;
+            left: 0px;
+            top: 0px;
+            ">  
         <a href=""><img class="icon" src="imgs/icons/icons8-twitter-48.png"></a>
         <a href=""><img class="icon" src="imgs/icons/icons8-wordpress-48.png"></a>
         <button href="mailto:luisa@luisasuda.com" type="button">email</button>
@@ -213,15 +297,14 @@
 
       <h2>hi! nice to meet you. 👋</h2><br>
 
-      <p>i’m a product owner at a healthtech company in brazil. I’ve been working in this industry sector for a year, after joining an AI-based solutions in assisted diagnosis startup as a product researcher. Before that, I worked in the telecommunications industry, given that I have majored in Electrical Engineering, and also hold a specialist title in Telecommunications.</p>
-      <div id="ellipse"></div>
-      <img style="position: absolute;
+      <p>i'm a product owner at a healthtech company in brazil. i've been working in this industry sector for a year, after joining an AI-based solutions in assisted diagnosis startup as a product researcher. before that, I worked in the telecommunications industry, given that I have majored in Electrical Engineering, and also hold a specialist title in Telecommunications.</p>
+     
+     <img style="position: absolute;
       width: 652px;
       height: 870px;
       left: 750px;
       top: 25px;" src="imgs/32C72ECD-E0FD-4D88-8AFA-0E44EB464183.jpg">
 
-      <div id="ellipse"></div>
 
         <footer>
           <b>march 2022</b>  <i>from sp with 💛</i>  <a href="mailto:luisa@luisasuda.com">luisa@luisasuda.com</a>
